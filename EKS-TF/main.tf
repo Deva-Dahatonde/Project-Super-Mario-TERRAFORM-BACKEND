@@ -125,7 +125,7 @@ resource "aws_eks_node_group" "example" {
   }
 
   # EC2 instance type for worker nodes
-  instance_types = ["c7i-flex.large"]
+  instance_types = ["t3.small"]
 
   # Ensure IAM Role policies are created before node group
   depends_on = [
